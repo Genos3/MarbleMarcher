@@ -1,6 +1,0 @@
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/CMakeFiles/MarbleMarcher.dir
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/CMakeFiles/edit_cache.dir
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/CMakeFiles/rebuild_cache.dir
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/src/CMakeFiles/MarbleMarcherSources.dir
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/src/CMakeFiles/edit_cache.dir
-C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/src/CMakeFiles/rebuild_cache.dir
