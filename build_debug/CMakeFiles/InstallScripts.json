@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/cmake_install.cmake",
+		"C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/build_debug/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
