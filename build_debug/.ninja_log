@@ -1,0 +1,15 @@
+# ninja log v7
+38	3338	8017822954628088	src/CMakeFiles/MarbleMarcherSources.dir/glad.c.obj	ed2d4f94ce37ba89
+32	3812	8017822954578095	src/CMakeFiles/MarbleMarcherSources.dir/SelectRes.cpp.obj	7e567e15937d014f
+27	6091	8017822954528105	src/CMakeFiles/MarbleMarcherSources.dir/Scores.cpp.obj	b66f6fa6cdccb9a3
+11	6577	8017822954378096	src/CMakeFiles/MarbleMarcherSources.dir/Level.cpp.obj	119fd686eb7f4f8f
+18	6942	8017822954428081	src/CMakeFiles/MarbleMarcherSources.dir/Overlays.cpp.obj	b7a6e4658b808cfa
+6132	7063	8017823017200917	CMakeFiles/MarbleMarcher.dir/src/Resource.rc.obj	685bdd6ee8781701
+3450	12397	8017822989512709	src/CMakeFiles/MarbleMarcherSources.dir/load_shaders.cpp.obj	fadd8974ef320b00
+3874	12669	8017822993147843	CMakeFiles/MarbleMarcher.dir/src/Main.cpp.obj	3248cef4604826e8
+23	16695	8017822954478290	src/CMakeFiles/MarbleMarcherSources.dir/Scene.cpp.obj	51b0593eb6a7c8a4
+16695	17320	8017823121185030	src/libMarbleMarcherSources.a	e2fce5b7c40ac3fe
+17320	18382	8017823127461188	C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/MarbleMarcher_dbg.exe	d1eed44c6749ed66
+21	6537	8017826915988819	src/CMakeFiles/MarbleMarcherSources.dir/load_shaders.cpp.obj	fadd8974ef320b00
+6538	7050	8017826981174125	src/libMarbleMarcherSources.a	e2fce5b7c40ac3fe
+7050	8581	8017826986288640	C:/Users/usuario/Desktop/my_folder/dev/guide/sources/MarbleMarcher-custom/MarbleMarcher_dbg.exe	d1eed44c6749ed66
