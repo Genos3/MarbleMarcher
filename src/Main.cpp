@@ -80,8 +80,6 @@ float GetVol() {
 
 void LockMouse(sf::RenderWindow& window, const sf::Vector2i screen_center) {
   window.setMouseCursorVisible(false);
-  // const sf::Vector2u size = window.getSize();
-  // mouse_pos = sf::Vector2i(size.x / 2, size.y / 2);
   mouse_pos = screen_center;
   sf::Mouse::setPosition(mouse_pos);
 }
@@ -112,21 +110,10 @@ int WinMain(HINSTANCE hInstance, HINSTANCE, LPTSTR lpCmdLine, int nCmdShow) {
 int main(int argc, char *argv[]) {
 #endif
   //Make sure shader is supported
-  /* if (!sf::Shader::isAvailable()) {
+  if (!sf::Shader::isAvailable()) {
     ERROR_MSG("Graphics card does not support shaders");
     return 1;
   }
-  //Load the vertex shader
-  sf::Shader shader;
-  if (!shader.loadFromFile(vert_glsl, sf::Shader::Vertex)) {
-    ERROR_MSG("Failed to compile vertex shader");
-    return 1;
-  }
-  //Load the fragment shader
-  if (!shader.loadFromFile(frag_glsl, sf::Shader::Fragment)) {
-    ERROR_MSG("Failed to compile fragment shader");
-    return 1;
-  } */
 
   //Load the font
   sf::Font font;
@@ -195,7 +182,6 @@ int main(int argc, char *argv[]) {
   sf::ContextSettings settings;
   settings.majorVersion = 4;
   settings.minorVersion = 5;
-  // settings.attributeFlags = sf::ContextSettings::Core;
 
   //Create the window
   sf::VideoMode screen_size;
@@ -234,25 +220,8 @@ int main(int argc, char *argv[]) {
     fullscreen = false;
   }
 
-  //Create the render texture if needed
-  /* sf::RenderTexture renderTexture;
-  if (fullscreen) {
-    renderTexture.create(resolution->width, resolution->height, settings);
-    renderTexture.setSmooth(true);
-    renderTexture.setActive(true);
-    window.setActive(false);
-  } */
-
   //Create the fractal scene
   Scene scene(level_music);
-  // const sf::Glsl::Vec2 window_res((float)resolution->width, (float)resolution->height);
-  // shader.setUniform("iResolution", window_res);
-  // scene.Write(shader);
-
-  //Create screen rectangle
-  // sf::RectangleShape rect;
-  // rect.setSize(window_res);
-  // rect.setPosition(0, 0);
   
   sf::Texture render_tex;
   render_tex.create(resolution->width, resolution->height);
@@ -522,35 +491,9 @@ int main(int argc, char *argv[]) {
       lag_ms -= 1000.0f / target_fps;
       skip_frame = true;
     } else {
-      //Update the shader values
-      // scene.Write(shader);
-
-      //Setup full-screen shader
-      // sf::RenderStates states = sf::RenderStates::Default;
-      // states.shader = &shader;
-
-      //Draw the fractal
-      /* if (fullscreen) {
-        //Draw to the render texture
-        renderTexture.draw(rect, states);
-        renderTexture.display();
-
-        //Draw render texture to main window
-        sf::Sprite sprite(renderTexture.getTexture());
-        sprite.setScale(float(screen_size.width) / float(resolution->width),
-                        float(screen_size.height) / float(resolution->height));
-        window.draw(sprite);
-      } else {
-        //Draw directly to the main window
-        window.draw(rect, states);
-      } */
-      
       // render into fixed-resolution FBO
       glBindFramebuffer(GL_FRAMEBUFFER, fbo);
       glViewport(0, 0, resolution->width, resolution->height);
-      
-      // glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-      // glClear(GL_COLOR_BUFFER_BIT);
       
       // update the shader values
       update_uniforms(scene);
